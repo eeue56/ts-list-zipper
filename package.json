@@ -1,0 +1,33 @@
+{
+  "name": "ts-list-zipper",
+  "version": "0.0.1",
+  "description": "A list zipper for TypeScript",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "node_modules/.bin/tsfmt -r && node_modules/.bin/tslint --fix -p . && node_modules/.bin/tsc",
+    "prepublishOnly": "node_modules/.bin/tsc -p ./ --outDir dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eeue56/ts-list-zipper.git"
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "zipper",
+    "list"
+  ],
+  "author": "eeue56",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/eeue56/ts-list-zipper/issues"
+  },
+  "homepage": "https://github.com/eeue56/ts-list-zipper#readme",
+  "devDependencies": {
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.2",
+    "typescript-formatter": "^5.2.0"
+  },
+  "dependencies": {}
+}
